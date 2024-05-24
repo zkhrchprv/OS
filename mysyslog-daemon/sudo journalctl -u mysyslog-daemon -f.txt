@@ -1,0 +1,32 @@
+sa@astra:~/Документы/mysyslog-daemon$ sudo journalctl -xe
+мая 20 19:29:46 astra mysyslog-daemon[7476]: Daemon is running
+мая 20 19:29:56 astra mysyslog-daemon[7476]: Daemon is running
+мая 20 19:30:01 astra audit[7772]: USER_ACCT pid=7772 uid=0 auid=4294967295 ses=4294967295 subj=0:63:0:0 msg='op=PAM:accounting
+мая 20 19:30:01 astra audit[7772]: CRED_ACQ pid=7772 uid=0 auid=4294967295 ses=4294967295 subj=0:63:0:0 msg='op=PAM:setcred gra
+мая 20 19:30:01 astra audit[7772]: SYSCALL arch=c000003e syscall=1 success=yes exit=1 a0=7 a1=7ffefd9b1c40 a2=1 a3=0 items=0 pp
+мая 20 19:30:01 astra audit: PROCTITLE proctitle=2F7573722F7362696E2F43524F4E002D66
+мая 20 19:30:01 astra CRON[7772]: pam_kiosk2(cron:session): need_continue: UID 0 detected, skipping. User: root
+мая 20 19:30:01 astra CRON[7772]: pam_unix(cron:session): session opened for user root by (uid=0)
+мая 20 19:30:01 astra audit[7772]: USER_START pid=7772 uid=0 auid=0 ses=9 subj=0:63:0:0 msg='op=PAM:session_open grantors=pam_l
+мая 20 19:30:01 astra CRON[7773]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/inv
+мая 20 19:30:01 astra audit[7772]: CRED_DISP pid=7772 uid=0 auid=0 ses=9 subj=0:63:0:0 msg='op=PAM:setcred grantors=pam_permit 
+мая 20 19:30:01 astra CRON[7772]: pam_unix(cron:session): session closed for user root
+мая 20 19:30:01 astra audit[7772]: USER_END pid=7772 uid=0 auid=0 ses=9 subj=0:63:0:0 msg='op=PAM:session_close grantors=pam_lo
+мая 20 19:30:06 astra mysyslog-daemon[7476]: Daemon is running
+мая 20 19:30:16 astra mysyslog-daemon[7476]: Daemon is running
+мая 20 19:30:26 astra mysyslog-daemon[7476]: Daemon is running
+мая 20 19:30:29 astra sudo[7728]: pam_unix(sudo:session): session closed for user root
+мая 20 19:30:29 astra audit[7728]: USER_END pid=7728 uid=0 auid=1000 ses=3 subj=0:63:0:0 msg='op=PAM:session_close grantors=pam
+мая 20 19:30:29 astra audit[7728]: CRED_DISP pid=7728 uid=0 auid=1000 ses=3 subj=0:63:0:0 msg='op=PAM:setcred grantors=pam_perm
+мая 20 19:30:32 astra mysyslog-daemon[7782]: Daemon started
+мая 20 19:30:32 astra mysyslog-daemon[7782]: Configuration: path=/var/log/mysyslog.log, format=text, driver=default
+мая 20 19:30:32 astra mysyslog-daemon[7782]: Daemon is running
+мая 20 19:30:36 astra mysyslog-daemon[7476]: Daemon is running
+мая 20 19:30:42 astra mysyslog-daemon[7782]: Daemon is running
+мая 20 19:30:42 astra audit[7783]: USER_ACCT pid=7783 uid=1000 auid=1000 ses=3 subj=0:63:0:0 msg='op=PAM:accounting grantors=pa
+мая 20 19:30:42 astra sudo[7783]:       sa : TTY=pts/0 ; PWD=/home/sa/Документы/mysyslog-daemon ; USER=root ; COMMAND=/usr/bin/
+мая 20 19:30:42 astra audit[7783]: USER_CMD pid=7783 uid=1000 auid=1000 ses=3 subj=0:63:0:0 msg='cwd=2F686F6D652F73612FD094D0BE
+мая 20 19:30:42 astra audit[7783]: CRED_REFR pid=7783 uid=0 auid=1000 ses=3 subj=0:63:0:0 msg='op=PAM:setcred grantors=pam_perm
+мая 20 19:30:42 astra sudo[7783]: pam_kiosk2(sudo:session): need_continue: UID 0 detected, skipping. User: root
+мая 20 19:30:42 astra sudo[7783]: pam_unix(sudo:session): session opened for user root by sa(uid=0)
+мая 20 19:30:42 astra audit[7783]: USER_START pid=7783 uid=0 auid=1000 ses=3 subj=0:63:0:0 msg='op=PAM:session_open grantors=pa
